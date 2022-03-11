@@ -8,3 +8,18 @@ let p1 = new Promise((resolve, reject) => resolve());
 setTimeout(console.log, 0, p1); // node.js 会显示 Promise {undefined} 浏览器会显示 Promise {<fulfilled>: undefined}
 let p2 = new Promise((resolve, reject) => reject());
 setTimeout(console.log, 0, p2); //两个平台都会报错 node.js 会显示 Promise {<rejected> undefined} 浏览器会显示 Promise {<rejected>: undefined}
+
+
+let p=new promise((resolve, reject) => {
+    setTimeout(() => { 
+        resolve();
+    },1000);
+})
+.then(() => {
+    console.log("1")
+    return new Promise((resolve, reject) =>{
+        setTimeout(() => { 
+            resolve();
+        },1000);
+    })
+})
