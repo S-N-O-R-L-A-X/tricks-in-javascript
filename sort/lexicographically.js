@@ -35,3 +35,9 @@ nums3.sort((a, b) => {
     return 0;
  });
  console.log(nums3);// [ 'a', 'ap', 'app', 'apple', 'apply', 'banana' ] 实现字典序，所以要实现字典序或字典序逆序，也可以通过这种方式
+
+ let nums4 = ["a", "banana", "app", "ap", "apply", "apple"];
+ nums4.sort((a, b) => { 
+    return a.localeCompare(b);
+ });
+ console.log(nums4);// [ 'a', 'ap', 'app', 'apple', 'apply', 'banana' ] 实现字典序的另一种方式。注意这与环境有关，而且可能会有bug
