@@ -1,6 +1,5 @@
-const unused=require('./common_matchers.js');
 /** 
- * tobe
+ * toBe uses Object.is
 */
 
 test('two plus two is four', () => {
@@ -9,7 +8,7 @@ test('two plus two is four', () => {
 
 
 test('two plus two is four', () => {
-    expect(2 + 2).toBe("4");
+    expect(2 + 2).toBe("4"); // toBe uses Object.is, so this is an error.
 });
 
 /** 
@@ -25,7 +24,7 @@ test('adding positive numbers is not zero', () => {
 });
 
 /**
- * toEqual
+ * toEqual isUsed for checking values
  */
 
 test('object assignment', () => {
