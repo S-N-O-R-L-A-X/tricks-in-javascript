@@ -8,7 +8,7 @@ test('two plus two is four', () => {
 
 
 test('two plus two is four', () => {
-    expect(2 + 2).toBe("4"); // toBe uses Object.is, so this is an error.
+    expect(2 + 2).not.toBe("4"); // toBe uses Object.is, so this is an error.
 });
 
 /** 
