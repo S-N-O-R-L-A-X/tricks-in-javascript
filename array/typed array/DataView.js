@@ -1,5 +1,5 @@
 /**
- * 
+ * DataView can be used only when a ArrayBuffer is used.
  */
 
 const buffer1=new ArrayBuffer(16);
