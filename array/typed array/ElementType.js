@@ -1,3 +1,9 @@
+/**
+ * getUintX(num) read from byte num and read X bits as an unsigned number
+ * getintX(num) read from byte num and read X bits as a signed number 
+ * setUintX(num) write starting from byte num and write X bits as an unsigned number
+ * setintX(num) write starting from byte num and write X bits as a signed number 
+ */
 const buffer1 = new ArrayBuffer(2);
 const dataview1 = new DataView(buffer1);
 console.log(dataview1.getUint8(0)); //0
