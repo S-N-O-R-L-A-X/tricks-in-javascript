@@ -7,7 +7,7 @@ const m1 = new Map([
     ["key2", "val2"],
     ["key3", "val3"]
 ]);
-   alert(m1.size); // 3 
+console.log(m1.size); // 3 
 
 const m2 = new Map({
     [Symbol.iterator]: function*() {
@@ -16,4 +16,4 @@ const m2 = new Map({
         yield ["key3", "val3"];
     }
 });
-alert(m2.size); // 3
+console.log(m2.size); // 3
