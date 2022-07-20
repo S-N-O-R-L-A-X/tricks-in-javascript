@@ -34,5 +34,6 @@ MyCalendarTwo.prototype.book = function(start, end) {
         update(start, end - 1, -1, 0, 1000000000, 1);
         return false;
     }
+    
     return true;
 };
