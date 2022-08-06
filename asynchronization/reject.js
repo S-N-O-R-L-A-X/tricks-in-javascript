@@ -1,5 +1,5 @@
 /**
- * Promise.reject() 与Promise.resolve()类似，Promise.reject()会实例化一个拒绝的期约并抛出一个异步错误，且这个错误不能通过 try/catch 捕获
+ * Promise.reject() 与Promise.resolve()类似，Promise.reject()会实例化一个拒绝的Promise并抛出一个异步错误，且这个错误不能通过 try/catch 捕获
  * 这个错误可以通过拒绝处理程序.catch捕获，也可以通过then里回调捕获。
  * let p1 = new Promise((resolve, reject) => reject()); 与 let p2 = Promise.reject();等价
  * 
@@ -8,35 +8,35 @@
 
 new Promise((resolve, reject) => {
     setTimeout(() => {
-        const num=Math.floor(Math.random()*2);
-        if(num)
+        const num = Math.floor(Math.random() * 2);
+        if (num)
             resolve(num);
         else
             reject(num)
-    },3000)
+    }, 3000)
 })
-.then((param) => {
-    console.log(`resolved.The number is ${param}`);
-})
-.catch((param) => {
-    console.log(`rejected.The number is ${param}`);
-})
+    .then((param) => {
+        console.log(`resolved.The number is ${param}`);
+    })
+    .catch((param) => {
+        console.log(`rejected.The number is ${param}`);
+    })
 
 new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("The following is equivalent as the previous one")
-        const num=Math.floor(Math.random()*2);
-        if(num)
+        const num = Math.floor(Math.random() * 2);
+        if (num)
             resolve(num);
         else
             reject(num)
-    },3000)
+    }, 3000)
 })
-.then((param) => {
-    console.log(`resolved.The number is ${param}`);
-}, (param) => {
-    console.log(`rejected.The number is ${param}`);
-})
+    .then((param) => {
+        console.log(`resolved.The number is ${param}`);
+    }, (param) => {
+        console.log(`rejected.The number is ${param}`);
+    })
 
 /*
 
