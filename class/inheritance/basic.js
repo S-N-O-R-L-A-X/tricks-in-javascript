@@ -1,6 +1,7 @@
 /**
- * class still uses the prototype chain
- * ES6 supports single inheritance and can inherit properties with [[Construct]] and prototype 
+ * class still uses the prototype chain.
+ * ES6 supports single inheritance and can inherit properties with [[Construct]] and prototype.
+ * extends can be used in class expression，so let Bar = class extends Foo { } is an effective method.
  */
 
 class Vehicle { }
