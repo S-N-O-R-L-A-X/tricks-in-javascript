@@ -31,6 +31,10 @@ const person1 = new Person("Nicholas", 29, "Software Engineer");
 const person2 = new Person("Greg", 27, "Doctor");
 const person3 = new Person2("AA", 40, "Student");
 
+console.log(person1.constructor == Person); // true 
+console.log(person2.constructor == Person); // true
+console.log(person3.constructor == Person2); // false
+
 /*
  Person {
   name: 'Nicholas',
