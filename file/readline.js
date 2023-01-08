@@ -8,6 +8,8 @@ const rl = readline.createInterface({
     terminal: false
 });
 
+let cnt = 0;
 rl.on('line', function (text) {
-    console.log(text);
+    console.log("第" + cnt + "行内容为:" + text);
+    ++cnt;
 });
