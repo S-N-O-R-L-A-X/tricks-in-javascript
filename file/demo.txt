@@ -1,0 +1,2 @@
+hi, all
+let's learn javascript.
