@@ -1,5 +1,5 @@
 /**
- * when use new to vreate instance,
+ * when use new to create instance,
  * 1.create a new object in memory
  * 2.the [[property]] in new object will be assigned the prototype of the constructor
  * 3.this in the constructor will be assigned the new object(this pointers to new object)
