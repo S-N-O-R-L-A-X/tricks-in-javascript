@@ -40,3 +40,20 @@
  * 
  * 有一点非常重要：实例与构造函数原型之间有直接的联系，但实例与构造函数之间没有。
  */
+
+
+function Person() { }
+
+console.log(typeof Person.prototype); //object
+console.log(Person.prototype);
+
+console.log(Person.prototype.constructor === Person); // true
+/* 
+nodejs:
+{}
+
+chrome:
+{ constructor: ƒ }
+    constructor: ƒ Person()
+    [[Prototype]]: Object
+*/
